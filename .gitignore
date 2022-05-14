@@ -1,0 +1,13 @@
+.DS_Store
+*.o
+*.os
+*.so
+*.dylib
+.import/
+*.dblite
+*.exp
+*.lib
+*.obj
+*.TMP
+logs
+Thumbs.db

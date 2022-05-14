@@ -1,5 +1,7 @@
-# godot_quest
+# Godot VR Template
 
-Test specifically to get Godot working on the Oculus Quest 2.
+Godot VR template project to build new projects off of.
 
-Specifically the full tutorial [in the Godot docs](https://docs.godotengine.org/en/stable/tutorials/vr/openvr/vr_starter_tutorial/vr_starter_tutorial_part_one.html).
+Currently supports:
+- Quest 2
+- Android

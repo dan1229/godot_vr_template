@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scenes/GUI.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Base_Control.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Titillium-Regular.otf" type="DynamicFontData" id=3]
 
 [sub_resource type="QuadMesh" id=1]
@@ -57,6 +58,7 @@ gui_snap_controls_to_pixels = false
 [node name="Base_Control" type="Control" parent="GUI"]
 margin_right = 800.0
 margin_bottom = 800.0
+script = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="GUI/Base_Control"]
 anchor_right = 1.0
@@ -75,8 +77,8 @@ margin_left = -400.0
 margin_top = -306.0
 margin_right = 400.0
 margin_bottom = -207.0
-custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 0, 1, 0.273438, 1 )
+custom_fonts/font = SubResource( 6 )
 text = "Find all of the spheres and destroy them!"
 align = 1
 valign = 1
@@ -91,8 +93,8 @@ margin_top = -201.0
 margin_right = 675.0
 margin_bottom = 326.0
 rect_scale = Vector2( 0.7, 0.7 )
-custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 0.992188, 1, 0, 1 )
+custom_fonts/font = SubResource( 6 )
 text = "Teleport by pressing the trigger while not holding anything
 
 Move with the touchpads and/or the joysticks
@@ -114,8 +116,8 @@ margin_left = -400.0
 margin_top = -226.0
 margin_right = 400.0
 margin_bottom = -127.0
-custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 0, 1, 0.273438, 1 )
+custom_fonts/font = SubResource( 6 )
 text = "10 Spheres remaining"
 align = 1
 valign = 1
@@ -128,8 +130,8 @@ anchor_bottom = 1.0
 margin_left = -400.0
 margin_top = -99.0
 margin_right = 400.0
-custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
 text = "Grab and interact with the
 red Box to reset!"
 align = 1

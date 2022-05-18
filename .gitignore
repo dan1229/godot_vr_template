@@ -1,4 +1,3 @@
-.DS_Store
 *.o
 *.os
 *.so
@@ -11,3 +10,4 @@
 *.TMP
 logs
 Thumbs.db
+.DS_Store

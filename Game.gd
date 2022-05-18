@@ -3,6 +3,8 @@ extends Spatial
 
 var perform_runtime_config = false
 
+var spheres_left = 10
+var sphere_ui = null
 
 onready var ovr_init_config = preload("res://addons/godot_ovrmobile/OvrInitConfig.gdns").new()
 onready var ovr_performance = preload("res://addons/godot_ovrmobile/OvrPerformance.gdns").new()
@@ -31,3 +33,10 @@ func _process(_delta):
 		ovr_performance.set_clock_levels(1, 1)
 		ovr_performance.set_extra_latency_mode(1)
 		perform_runtime_config = true
+		
+		
+func remove_sphere():
+	spheres_left -= 1
+
+	if sphere_ui != null:
+		sphere_ui.update_ui(spheres_left)
